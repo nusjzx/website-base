@@ -6277,6 +6277,23 @@
       },
       "src": "schedule/week9/outcomes.md",
       "title": ""
+    },
+    {
+      "headings": {
+        "software-engineering-for-self-directed-learners": "Software Engineering for Self-Directed Learners",
+        "about-this-book": "About this Book",
+        "software-engineering": "Software Engineering",
+        "object-oriented-programming-with-uml": "Object-Oriented Programming (with UML)",
+        "requirements": "Requirements",
+        "design": "Design",
+        "implementation": "Implementation",
+        "quality-assurance": "Quality Assurance",
+        "project-management": "Project Management",
+        "tools": "Tools",
+        "supplementary": "Supplementary"
+      },
+      "title": "Software Engineering for Self-Directed Learners [CS2103/T Version]",
+      "src": "se-book-adapted/index.md"
     }
   ]
 }
