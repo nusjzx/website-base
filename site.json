@@ -31,7 +31,8 @@
       "glob": "**/usage.md"
     },
     {
-      "glob": "**/print.md"
+      "glob": "**/print.md",
+      "searchable": "no"
     },
     {
       "glob": "**/all.md"
