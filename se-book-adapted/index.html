@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CS2103/T Website - Software Engineering for Self-Directed Learners [CS2103/T Version]</title>
     <link rel="stylesheet" href="..\markbind\css\bootstrap.min.css">
+    <link rel="stylesheet" href="..\markbind\css\bootstrap-vue.min.css">
+    <link rel="stylesheet" href="..\markbind\css\font-awesome.min.css" >
+    <link rel="stylesheet" href="..\markbind\css\bootstrap-glyphicons.min.css" >
     <link rel="stylesheet" href="..\markbind\css\github.min.css">
     <link rel="stylesheet" href="..\markbind\css\markbind.css">
     <link rel="stylesheet" href="..\markbind\css\site-nav.css">
@@ -13,454 +16,553 @@
 </head>
 <body>
 <div id="app" class="container-fluid">
+    <div id="flex-body">
+  <div id="site-nav">
+    <ul style="list-style-type: none; margin-left:-1em">
+      <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/index.html">Home <span class="glyphicon glyphicon-home" aria-hidden="true"></span>, printable versions <span class="glyphicon glyphicon-print" aria-hidden="true"></span></a></li>
+      <li style="margin-top: 10px"><button class="dropdown-btn"><strong>Software Engineering</strong>
+ <i class="dropdown-btn-icon">
+<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+        <div class="dropdown-container">
+          <ul style="list-style-type: none; margin-left:-1em">
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/softwareEngineering.html">Software Engineering</a></li>
+          </ul>
+        </div>
+      </li>
+      <li style="margin-top: 10px"><button class="dropdown-btn"><strong>Programming Paradigms</strong>
+ <i class="dropdown-btn-icon">
+<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+        <div class="dropdown-container">
+          <ul style="list-style-type: none; margin-left:-1em">
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/oop.html">Object-Oriented Programming</a></li>
+          </ul>
+        </div>
+      </li>
+      <li style="margin-top: 10px"><button class="dropdown-btn"><strong>Requirements</strong>
+ <i class="dropdown-btn-icon">
+<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+        <div class="dropdown-container">
+          <ul style="list-style-type: none; margin-left:-1em">
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/requirements.html">Requirements</a></li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/gatheringRequirements.html">Gathering Requirements</a></li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/specifyingRequirements.html">Specifying Requirements</a></li>
+          </ul>
+        </div>
+      </li>
+      <li style="margin-top: 10px"><button class="dropdown-btn"><strong>Design</strong>
+ <i class="dropdown-btn-icon">
+<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+        <div class="dropdown-container">
+          <ul style="list-style-type: none; margin-left:-1em">
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/design.html">Software Design</a></li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/designFundamentals.html">Design Fundamentals</a></li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/modeling.html">Modeling</a></li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/architecture.html">Software Architecture</a></li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/designPatterns.html">Software Design Patterns</a></li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/designApproaches.html">Design Approaches</a></li>
+          </ul>
+        </div>
+      </li>
+      <li style="margin-top: 10px"><button class="dropdown-btn"><strong>Implementation</strong>
+ <i class="dropdown-btn-icon">
+<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+        <div class="dropdown-container">
+          <ul style="list-style-type: none; margin-left:-1em">
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/ides.html">IDEs</a></li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/codeQuality.html">Code Quality</a></li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/refactoring.html">Refactoring</a></li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/documentation.html">Documentation</a></li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/errorHandling.html">Error Handling</a></li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/integration.html">Integration</a></li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/reuse.html">Reuse</a></li>
+          </ul>
+        </div>
+      </li>
+      <li style="margin-top: 10px"><button class="dropdown-btn"><strong>Quality Assurance</strong>
+ <i class="dropdown-btn-icon">
+<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+        <div class="dropdown-container">
+          <ul style="list-style-type: none; margin-left:-1em">
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/qualityAssurance.html">Quality Assurance</a></li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/testing.html">Testing</a></li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/testCaseDesign.html">Test Case Design</a></li>
+          </ul>
+        </div>
+      </li>
+      <li style="margin-top: 10px"><button class="dropdown-btn"><strong>Project Management</strong>
+ <i class="dropdown-btn-icon">
+<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+        <div class="dropdown-container">
+          <ul style="list-style-type: none; margin-left:-1em">
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/revisionControl.html">Revision Control</a></li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/projectPlanning.html">Project Planning</a></li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/teamwork.html">Teamwork</a></li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/processModels.html">SDLC Process Models</a></li>
+          </ul>
+        </div>
+      </li>
+      <li style="margin-top: 10px"><button class="dropdown-btn"><strong>Tools</strong>
+ <i class="dropdown-btn-icon">
+<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+        <div class="dropdown-container">
+          <ul style="list-style-type: none; margin-left:-1em">
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/uml.html">UML</a></li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/intellij.html">Intellij IDEA</a></li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/gitAndGithub.html">Git and Github</a></li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/javaTools.html">Java</a></li>
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/junit.html">JUnit</a></li>
+          </ul>
+        </div>
+      </li>
+      <li style="margin-top: 10px"><button class="dropdown-btn"><strong>Principles</strong>
+ <i class="dropdown-btn-icon">
+<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+        <div class="dropdown-container">
+          <ul style="list-style-type: none; margin-left:-1em">
+            <li style="margin-top: 10px"><a href="/website-base/se-book-adapted/chapters/principles.html">Principles</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="site-nav-btn-wrap">
+    <div id="site-nav-btn">
+      <div class="menu-top-bar"></div>
+      <div class="menu-middle-bar"></div>
+      <div class="menu-bottom-bar"></div>
+    </div>
+  </div>
+  <div id="page-content">
     <link rel="stylesheet" href="/website-base/book/css/textbook.css">
-<div class="website-content" id="all">
-  <h2 id="software-engineering-for-self-directed-learners">Software Engineering for Self-Directed Learners</h2>
-  <h3 id="about-this-book">About this Book</h3>
-  <ul>
-    <li><a href="about/acknowledgements.html">Acknowledgements</a></li>
-    <li><a href="about/usage.html">How to use this book</a></li>
-  </ul>
-  <h3 id="software-engineering">Software Engineering</h3>
-  <div>
-    <ul>
-      <li><a href="/website-base/book/softwareEngineering/">Software Engineering</a>
-        <trigger for="pop:softwareEngineering-preview">🔍</trigger><a href="softwareEngineering/print.html">📜</a></li>
-    </ul>
-    <popover id="pop:softwareEngineering-preview" title="Software Engineering :mag:" placement="right">
-      <div slot="content">
-        <div>
-          <p>All about software engineering</p>
+    <div>
+      <navbar placement="top" type="inverse">
+        <a slot="brand" href="/website-base/index.html" title="Home" class="navbar-brand">CS2103/T-AY1718S2</a>
+        <li><a href="/website-base/index.html" class="nav-link">Schedule</a></li>
+        <dropdown text="Textbook" class="nav-link">
+          <li><a href="/website-base/se-book-adapted/index.html" class="dropdown-item"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Table of Contents</a></li>
+          <li><a href="/website-base/se-book-adapted/print.html" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-print" aria-hidden="true"></span> Printer-Friendly(ish)</a></li>
+        </dropdown>
+        <li><a href="/website-base/admin/index.html" class="nav-link">Admin</a></li>
+        <li><a href="https://docs.google.com/document/d/e/2PACX-1vQNqBNRmqyfJO2NtmbJiunrHcWMf_N_9JxbPKMi1Q3UZY2RZt9EKeoowZn79CKfhFf0vMKeQNy3jEv5/pub?embed=true" class="nav-link">Instructors</a></li>
+        <dropdown text="IVLE" class="nav-link">
+          <li><a href="https://ivle.nus.edu.sg/v1/Announcement/default.aspx?CourseID=3b6f07b7-fd7c-466c-9b0c-ced8cff6778f" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span> Announcements</a></li>
+          <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=3b6f07b7-fd7c-466c-9b0c-ced8cff6778f&WorkbinID=4cee3535-f9b6-43c1-8b88-816ed0a3795d&FolderID=3eb8a383-e710-43af-94dc-89cd9ba234ac" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Submissions</a></li>
+        </dropdown>
+        <dropdown text="Discuss" class="nav-link">
+          <li><a href="https://nus-cs2103-ay1718s2.slack.com" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Slack</a></li>
+          <li><a href="https://github.com/nus-cs2103-AY1718S2/forum/issues" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Forum</a></li>
+        </dropdown>
+        <dropdown text="Links" class="nav-link">
+          <li><a href="https://github.com/nus-cs2103-AY1718S2/website/issues" target="_blank" class="dropdown-item"> <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span> Report Bugs</a></li>
+          <li><a href="https://github.com/nus-cs2103-AY1718S2/forum/issues" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Forum</a></li>
+          <li><a href="/website-base/schedule/overview/tutorialSchedule.html" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Tutorial Schedule</a></li>
+          <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vT-MyLw2vxPkkDN7Lfi9J0PIE2iC3TRPXuhXWMO4xTYu5JXmuCKJLluTlnmMrzpTOFihyacbKq4hBbY/pubhtml" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Team IDs</a></li>
+          <li><a href="https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Java Coding Standard</a></li>
+          <li><a href="https://github.com/nus-cs2103-AY1718S2/samplerepo-things" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> samplerepo-things</a></li>
+          <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level1" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level1</a></li>
+          <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level2" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level2</a></li>
+          <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level3" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level3</a></li>
+          <li><a href="https://github.com/nus-cs2103-AY1718S2/addressbook-level4" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Addressbook-level4</a></li>
+          <li><a href="/website-base/admin/projectList.html" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span> Projects List</a></li>
+        </dropdown>
+        <li slot="right" class="nav-link">
+          <form class="navbar-form">
+            <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right=""></searchbar>
+          </form>
+        </li>
+      </navbar>
+    </div>
+    <div class="website-content" id="all">
+      <h2 id="software-engineering-for-self-directed-learners">Software Engineering for Self-Directed Learners</h2>
+      <p><big><span class="badge">CS2103/T edition - 2018</span></big></p>
+      <p><br><big></big></p>
+      <p><strong>About this Book</strong></p>
+      <ul>
+        <li><a href="/website-base/book/about/acknowledgements.html">Acknowledgements</a></li>
+        <li><a href="/website-base/book/about/usage.html">How to use this book</a></li>
+        <li><a href="/website-base/se-book-adapted/print.html">All chapters as one printer-friendly page (huge file!) <span class="glyphicon glyphicon-print" aria-hidden="true"></span></a></li>
+      </ul>
+      <p><br><big></big></p>
+      <p><strong>Software Engineering</strong></p>
+      <ul>
+        <li><a href="/website-base/se-book-adapted/chapters/softwareEngineering.html">Software Engineering</a>
+          <trigger for="pop:softwareEngineering-preview"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></trigger> <a href="/website-base/se-book-adapted/chapters-printable/softwareEngineering-printable.html"><span class="glyphicon glyphicon-print" aria-hidden="true"></span></a></li>
+      </ul>
+      <popover id="pop:softwareEngineering-preview" title="Software Engineering <span class='glyphicon glyphicon-eye-open' aria-hidden='true'></span>" placement="right">
+        <div slot="content">
+          <div>
+            <p>All about software engineering</p>
+          </div>
         </div>
-      </div>
-    </popover>
-  </div>
-  <h3 id="object-oriented-programming-with-uml">Object-Oriented Programming (with UML)</h3>
-  <div>
-    <ul>
-      <li><a href="/website-base/book/oopDesign/">OOP - Concepts</a>
-        <trigger for="pop:oopDesign-preview">🔍</trigger><a href="oopDesign/print.html">📜</a></li>
-    </ul>
-    <popover id="pop:oopDesign-preview" title="Object Oriented Programming :mag:" placement="right">
-      <div slot="content">
-        <div>
-          <p>All about object oriented programming</p>
+      </popover>
+      <p><br><big></big></p>
+      <p><strong>Programming Paradigms</strong></p>
+      <ul>
+        <li><a href="/website-base/se-book-adapted/chapters/oop.html">Object-Oriented Programming</a>
+          <trigger for="pop:oop-preview"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></trigger> <a href="/website-base/se-book-adapted/chapters-printable/oop-printable.html"><span class="glyphicon glyphicon-print" aria-hidden="true"></span></a></li>
+      </ul>
+      <popover id="pop:oop-preview" title="Object-Oriented Programming <span class='glyphicon glyphicon-eye-open' aria-hidden='true'></span>" placement="right">
+        <div slot="content">
+          <div>
+            <p>All about object oriented programming</p>
+          </div>
         </div>
-      </div>
-    </popover>
-  </div>
-  <div>
-    <ul>
-      <li><a href="/website-base/book/oopImplementation/">OOP - Implementation</a>
-        <trigger for="pop:oopImplementation-preview">🔍</trigger><a href="oopImplementation/print.html">📜</a></li>
-    </ul>
-    <popover id="pop:oopImplementation-preview" title="OOP :mag:" placement="right">
-      <div slot="content">
-        <div>
-          <p>All about OOP from the implementation perspective</p>
+      </popover>
+      <p><br><big></big></p>
+      <p><strong>Requirements</strong></p>
+      <ul>
+        <li><a href="/website-base/se-book-adapted/chapters/requirements.html">Requirements</a>
+          <trigger for="pop:requirements-preview"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></trigger> <a href="/website-base/se-book-adapted/chapters-printable/requirements-printable.html"><span class="glyphicon glyphicon-print" aria-hidden="true"></span></a></li>
+      </ul>
+      <popover id="pop:requirements-preview" title="Requirements <span class='glyphicon glyphicon-eye-open' aria-hidden='true'></span>" placement="right">
+        <div slot="content">
+          <div>
+            <p>All about requirements</p>
+          </div>
         </div>
-      </div>
-    </popover>
-  </div>
-  <h3 id="requirements">Requirements</h3>
-  <div>
-    <ul>
-      <li><a href="/website-base/book/requirements/">Requirements</a>
-        <trigger for="pop:requirements-preview">🔍</trigger><a href="requirements/print.html">📜</a></li>
-    </ul>
-    <popover id="pop:requirements-preview" title="Requirements :mag:" placement="right">
-      <div slot="content">
-        <div>
-          <p>All about requirements</p>
+      </popover>
+      <ul>
+        <li><a href="/website-base/se-book-adapted/chapters/gatheringRequirements.html">Gathering Requirements</a>
+          <trigger for="pop:gatheringRequirements-preview"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></trigger> <a href="/website-base/se-book-adapted/chapters-printable/gatheringRequirements-printable.html"><span class="glyphicon glyphicon-print" aria-hidden="true"></span></a></li>
+      </ul>
+      <popover id="pop:gatheringRequirements-preview" title="Gathering Requirements <span class='glyphicon glyphicon-eye-open' aria-hidden='true'></span>" placement="right">
+        <div slot="content">
+          <div>
+            <p>All about gathering requirements</p>
+          </div>
         </div>
-      </div>
-    </popover>
-  </div>
-  <div>
-    <ul>
-      <li><a href="/website-base/book/gatheringRequirements/">Gathering Requirements</a>
-        <trigger for="pop:gatheringRequirements-preview">🔍</trigger><a href="gatheringRequirements/print.html">📜</a></li>
-    </ul>
-    <popover id="pop:gatheringRequirements-preview" title="Gathering Requirements :mag:" placement="right">
-      <div slot="content">
-        <div>
-          <p>All about gathering requirements</p>
+      </popover>
+      <ul>
+        <li><a href="/website-base/se-book-adapted/chapters/specifyingRequirements.html">Specifying Requirements</a>
+          <trigger for="pop:specifyingRequirements-preview"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></trigger> <a href="/website-base/se-book-adapted/chapters-printable/specifyingRequirements-printable.html"><span class="glyphicon glyphicon-print" aria-hidden="true"></span></a></li>
+      </ul>
+      <popover id="pop:specifyingRequirements-preview" title="Specifying Requirements <span class='glyphicon glyphicon-eye-open' aria-hidden='true'></span>" placement="right">
+        <div slot="content">
+          <div>
+            <p>All about specifying requirements</p>
+          </div>
         </div>
-      </div>
-    </popover>
-  </div>
-  <div>
-    <ul>
-      <li><a href="/website-base/book/specifyingRequirements/">Specifying Requirements</a>
-        <trigger for="pop:specifyingRequirements-preview">🔍</trigger><a href="specifyingRequirements/print.html">📜</a></li>
-    </ul>
-    <popover id="pop:specifyingRequirements-preview" title="Specifying Requirements :mag:" placement="right">
-      <div slot="content">
-        <div>
-          <p>All about specifying requirements</p>
+      </popover>
+      <p><br><big></big></p>
+      <p><strong>Design</strong></p>
+      <ul>
+        <li><a href="/website-base/se-book-adapted/chapters/design.html">Software Design</a>
+          <trigger for="pop:design-preview"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></trigger> <a href="/website-base/se-book-adapted/chapters-printable/design-printable.html"><span class="glyphicon glyphicon-print" aria-hidden="true"></span></a></li>
+      </ul>
+      <popover id="pop:design-preview" title="Software Design <span class='glyphicon glyphicon-eye-open' aria-hidden='true'></span>" placement="right">
+        <div slot="content">
+          <div>
+            <p>All about software design</p>
+          </div>
         </div>
-      </div>
-    </popover>
-  </div>
-  <h3 id="design">Design</h3>
-  <div>
-    <ul>
-      <li><a href="/website-base/book/design/">Design</a>
-        <trigger for="pop:design-preview">🔍</trigger><a href="design/print.html">📜</a></li>
-    </ul>
-    <popover id="pop:design-preview" title="Software Design :mag:" placement="right">
-      <div slot="content">
-        <div>
-          <p>All about software design</p>
+      </popover>
+      <ul>
+        <li><a href="/website-base/se-book-adapted/chapters/designFundamentals.html">Design Fundamentals</a>
+          <trigger for="pop:designFundamentals-preview"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></trigger> <a href="/website-base/se-book-adapted/chapters-printable/designFundamentals-printable.html"><span class="glyphicon glyphicon-print" aria-hidden="true"></span></a></li>
+      </ul>
+      <popover id="pop:designFundamentals-preview" title="Design Fundamentals <span class='glyphicon glyphicon-eye-open' aria-hidden='true'></span>" placement="right">
+        <div slot="content">
+          <div>
+            <p>All about software design principles</p>
+          </div>
         </div>
-      </div>
-    </popover>
-  </div>
-  <div>
-    <ul>
-      <li><a href="/website-base/book/designFundamentals/">Design Fundamentals</a>
-        <trigger for="pop:design-fundamentals-preview">🔍</trigger><a href="designFundamentals/print.html">📜</a></li>
-    </ul>
-    <popover id="pop:design-fundamentals-preview" title="Software Design Fundamentals :mag:" placement="right">
-      <div slot="content">
-        <div>
-          <p>All about software design principles</p>
+      </popover>
+      <ul>
+        <li><a href="/website-base/se-book-adapted/chapters/modeling.html">Modeling</a>
+          <trigger for="pop:modeling-preview"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></trigger> <a href="/website-base/se-book-adapted/chapters-printable/modeling-printable.html"><span class="glyphicon glyphicon-print" aria-hidden="true"></span></a></li>
+      </ul>
+      <popover id="pop:modeling-preview" title="Modeling <span class='glyphicon glyphicon-eye-open' aria-hidden='true'></span>" placement="right">
+        <div slot="content">
+          <div>
+            <p>All about modeling</p>
+          </div>
         </div>
-      </div>
-    </popover>
-  </div>
-  <div>
-    <ul>
-      <li><a href="/website-base/book/modeling/">Modeling</a>
-        <trigger for="pop:modeling-preview">🔍</trigger><a href="modeling/print.html">📜</a></li>
-    </ul>
-    <popover id="pop:modeling-preview" title="Modeling :mag:" placement="right">
-      <div slot="content">
-        <div>
-          <p>All about modeling</p>
+      </popover>
+      <ul>
+        <li><a href="/website-base/se-book-adapted/chapters/architecture.html">Software Architecture</a>
+          <trigger for="pop:architecture-preview"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></trigger> <a href="/website-base/se-book-adapted/chapters-printable/architecture-printable.html"><span class="glyphicon glyphicon-print" aria-hidden="true"></span></a></li>
+      </ul>
+      <popover id="pop:architecture-preview" title="Software Architecture <span class='glyphicon glyphicon-eye-open' aria-hidden='true'></span>" placement="right">
+        <div slot="content">
+          <div>
+            <p>All about software architecture</p>
+          </div>
         </div>
-      </div>
-    </popover>
-  </div>
-  <div>
-    <ul>
-      <li><a href="/website-base/book/architecture/">Architecture</a>
-        <trigger for="pop:architecture-preview">🔍</trigger><a href="/website-base/book/architecture/print.html">📜</a></li>
-    </ul>
-    <popover id="pop:architecture-preview" title="Architecture :mag:" placement="right">
-      <div slot="content">
-        <div>
-          <p>All about software architecture</p>
+      </popover>
+      <ul>
+        <li><a href="/website-base/se-book-adapted/chapters/designPatterns.html">Software Design Patterns</a>
+          <trigger for="pop:designPatterns-preview"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></trigger> <a href="/website-base/se-book-adapted/chapters-printable/designPatterns-printable.html"><span class="glyphicon glyphicon-print" aria-hidden="true"></span></a></li>
+      </ul>
+      <popover id="pop:designPatterns-preview" title="Software Design Patterns <span class='glyphicon glyphicon-eye-open' aria-hidden='true'></span>" placement="right">
+        <div slot="content">
+          <div>
+            <p>All about software design patterns</p>
+          </div>
         </div>
-      </div>
-    </popover>
-  </div>
-  <div>
-    <ul>
-      <li><a href="/website-base/book/designPatterns/">Design Patterns</a>
-        <trigger for="pop:design-patterns-preview">🔍</trigger><a href="designPatterns/print.html">📜</a></li>
-    </ul>
-    <popover id="pop:design-patterns-preview" title="Software Design Patterns :mag:" placement="right">
-      <div slot="content">
-        <div>
-          <p>All about software design patterns</p>
+      </popover>
+      <ul>
+        <li><a href="/website-base/se-book-adapted/chapters/designApproaches.html">Design Approaches</a>
+          <trigger for="pop:designApproaches-preview"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></trigger> <a href="/website-base/se-book-adapted/chapters-printable/designApproaches-printable.html"><span class="glyphicon glyphicon-print" aria-hidden="true"></span></a></li>
+      </ul>
+      <popover id="pop:designApproaches-preview" title="Design Approaches <span class='glyphicon glyphicon-eye-open' aria-hidden='true'></span>" placement="right">
+        <div slot="content">
+          <div>
+            <p>All about software design approaches</p>
+          </div>
         </div>
-      </div>
-    </popover>
-  </div>
-  <div>
-    <ul>
-      <li><a href="/website-base/book/designApproaches/">Design Approaches</a>
-        <trigger for="pop:designApproaches-preview">🔍</trigger><a href="designApproaches/print.html">📜</a></li>
-    </ul>
-    <popover id="pop:designApproaches-preview" title="Design Approaches :mag:" placement="right">
-      <div slot="content">
-        <div>
-          <p>All about software design approaches</p>
+      </popover>
+      <p><br><big></big></p>
+      <p><strong>Implementation</strong></p>
+      <ul>
+        <li><a href="/website-base/se-book-adapted/chapters/ides.html">IDEs</a>
+          <trigger for="pop:ides-preview"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></trigger> <a href="/website-base/se-book-adapted/chapters-printable/ides-printable.html"><span class="glyphicon glyphicon-print" aria-hidden="true"></span></a></li>
+      </ul>
+      <popover id="pop:ides-preview" title="IDEs <span class='glyphicon glyphicon-eye-open' aria-hidden='true'></span>" placement="right">
+        <div slot="content">
+          <div>
+            <p>All about IDEs</p>
+          </div>
         </div>
-      </div>
-    </popover>
-  </div>
-  <h3 id="implementation">Implementation</h3>
-  <div>
-    <ul>
-      <li><a href="/website-base/book/ides/">IDEs</a>
-        <trigger for="pop:ides-preview">🔍</trigger><a href="ides/print.html">📜</a></li>
-    </ul>
-    <popover id="pop:ides-preview" title="IDEs :mag:" placement="right">
-      <div slot="content">
-        <div>
-          <p>All about IDEs</p>
+      </popover>
+      <ul>
+        <li><a href="/website-base/se-book-adapted/chapters/codeQuality.html">Code Quality</a>
+          <trigger for="pop:codeQuality-preview"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></trigger> <a href="/website-base/se-book-adapted/chapters-printable/codeQuality-printable.html"><span class="glyphicon glyphicon-print" aria-hidden="true"></span></a></li>
+      </ul>
+      <popover id="pop:codeQuality-preview" title="Code Quality <span class='glyphicon glyphicon-eye-open' aria-hidden='true'></span>" placement="right">
+        <div slot="content">
+          <div>
+            <p>All about writing better quality code</p>
+          </div>
         </div>
-      </div>
-    </popover>
-  </div>
-  <div>
-    <ul>
-      <li><a href="/website-base/book/codeQuality/">Code Quality</a>
-        <trigger for="pop:code-quality-preview">🔍</trigger><a href="codeQuality/print.html">📜</a></li>
-    </ul>
-    <popover id="pop:code-quality-preview" title="Code Quality :mag:" placement="right">
-      <div slot="content">
-        <div>
-          <p>All about writing better quality code</p>
+      </popover>
+      <ul>
+        <li><a href="/website-base/se-book-adapted/chapters/refactoring.html">Refactoring</a>
+          <trigger for="pop:refactoring-preview"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></trigger> <a href="/website-base/se-book-adapted/chapters-printable/refactoring-printable.html"><span class="glyphicon glyphicon-print" aria-hidden="true"></span></a></li>
+      </ul>
+      <popover id="pop:refactoring-preview" title="Refactoring <span class='glyphicon glyphicon-eye-open' aria-hidden='true'></span>" placement="right">
+        <div slot="content">
+          <div>
+            <p>All about refactoring</p>
+          </div>
         </div>
-      </div>
-    </popover>
-  </div>
-  <div>
-    <ul>
-      <li><a href="/website-base/book/refactoring/">Refactoring</a>
-        <trigger for="pop:refactoring-preview">🔍</trigger><a href="refactoring/print.html">📜</a></li>
-    </ul>
-    <popover id="pop:refactoring-preview" title="Refactoring :mag:" placement="right">
-      <div slot="content">
-        <div>
-          <p>All about refactoring</p>
+      </popover>
+      <ul>
+        <li><a href="/website-base/se-book-adapted/chapters/documentation.html">Documentation</a>
+          <trigger for="pop:documentation-preview"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></trigger> <a href="/website-base/se-book-adapted/chapters-printable/documentation-printable.html"><span class="glyphicon glyphicon-print" aria-hidden="true"></span></a></li>
+      </ul>
+      <popover id="pop:documentation-preview" title="Documentation <span class='glyphicon glyphicon-eye-open' aria-hidden='true'></span>" placement="right">
+        <div slot="content">
+          <div>
+            <p>All about documentation</p>
+          </div>
         </div>
-      </div>
-    </popover>
-  </div>
-  <div>
-    <ul>
-      <li><a href="/website-base/book/documentation/">Documentation</a>
-        <trigger for="pop:documentation-preview">🔍</trigger><a href="documentation/print.html">📜</a></li>
-    </ul>
-    <popover id="pop:documentation-preview" title="Documentation :mag:" placement="right">
-      <div slot="content">
-        <div>
-          <p>All about documentation</p>
+      </popover>
+      <ul>
+        <li><a href="/website-base/se-book-adapted/chapters/errorHandling.html">Error Handling</a>
+          <trigger for="pop:errorHandling-preview"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></trigger> <a href="/website-base/se-book-adapted/chapters-printable/errorHandling-printable.html"><span class="glyphicon glyphicon-print" aria-hidden="true"></span></a></li>
+      </ul>
+      <popover id="pop:errorHandling-preview" title="Error Handling <span class='glyphicon glyphicon-eye-open' aria-hidden='true'></span>" placement="right">
+        <div slot="content">
+          <div>
+            <p>All about error handling</p>
+          </div>
         </div>
-      </div>
-    </popover>
-  </div>
-  <div>
-    <ul>
-      <li><a href="/website-base/book/errorHandling/">Error Handling</a>
-        <trigger for="pop:errorHandling-preview">🔍</trigger><a href="errorHandling/print.html">📜</a></li>
-    </ul>
-    <popover id="pop:errorHandling-preview" title="Error Handling :mag:" placement="right">
-      <div slot="content">
-        <div>
-          <p>All about error handling</p>
+      </popover>
+      <ul>
+        <li><a href="/website-base/se-book-adapted/chapters/integration.html">Integration</a>
+          <trigger for="pop:integration-preview"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></trigger> <a href="/website-base/se-book-adapted/chapters-printable/integration-printable.html"><span class="glyphicon glyphicon-print" aria-hidden="true"></span></a></li>
+      </ul>
+      <popover id="pop:integration-preview" title="Integration <span class='glyphicon glyphicon-eye-open' aria-hidden='true'></span>" placement="right">
+        <div slot="content">
+          <div>
+            <p>All about integration</p>
+          </div>
         </div>
-      </div>
-    </popover>
-  </div>
-  <div>
-    <ul>
-      <li><a href="/website-base/book/integration/">Integration</a>
-        <trigger for="pop:integration-preview">🔍</trigger><a href="integration/print.html">📜</a></li>
-    </ul>
-    <popover id="pop:integration-preview" title="Integration :mag:" placement="right">
-      <div slot="content">
-        <div>
-          <p>All about integration</p>
+      </popover>
+      <ul>
+        <li><a href="/website-base/se-book-adapted/chapters/reuse.html">Reuse</a>
+          <trigger for="pop:reuse-preview"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></trigger> <a href="/website-base/se-book-adapted/chapters-printable/reuse-printable.html"><span class="glyphicon glyphicon-print" aria-hidden="true"></span></a></li>
+      </ul>
+      <popover id="pop:reuse-preview" title="Reuse <span class='glyphicon glyphicon-eye-open' aria-hidden='true'></span>" placement="right">
+        <div slot="content">
+          <div>
+            <p>All about reuse</p>
+          </div>
         </div>
-      </div>
-    </popover>
-  </div>
-  <div>
-    <ul>
-      <li><a href="/website-base/book/reuse/">Reuse</a>
-        <trigger for="pop:reuse-preview">🔍</trigger><a href="reuse/print.html">📜</a></li>
-    </ul>
-    <popover id="pop:reuse-preview" title="Reuse :mag:" placement="right">
-      <div slot="content">
-        <div>
-          <p>All about reuse</p>
+      </popover>
+      <p><br><big></big></p>
+      <p><strong>Quality Assurance</strong></p>
+      <ul>
+        <li><a href="/website-base/se-book-adapted/chapters/qualityAssurance.html">Quality Assurance</a>
+          <trigger for="pop:qualityAssurance-preview"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></trigger> <a href="/website-base/se-book-adapted/chapters-printable/qualityAssurance-printable.html"><span class="glyphicon glyphicon-print" aria-hidden="true"></span></a></li>
+      </ul>
+      <popover id="pop:qualityAssurance-preview" title="Quality Assurance <span class='glyphicon glyphicon-eye-open' aria-hidden='true'></span>" placement="right">
+        <div slot="content">
+          <div>
+            <p>All about quality assurance</p>
+          </div>
         </div>
-      </div>
-    </popover>
-  </div>
-  <h3 id="quality-assurance">Quality Assurance</h3>
-  <div>
-    <ul>
-      <li><a href="/website-base/book/qualityAssurance/">Quality Assurance</a>
-        <trigger for="pop:qualityAssurance-preview">🔍</trigger><a href="qualityAssurance/print.html">📜</a></li>
-    </ul>
-    <popover id="pop:qualityAssurance-preview" title="Quality Assurance :mag:" placement="right">
-      <div slot="content">
-        <div>
-          <p>All about quality assurance</p>
+      </popover>
+      <ul>
+        <li><a href="/website-base/se-book-adapted/chapters/testing.html">Testing</a>
+          <trigger for="pop:testing-preview"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></trigger> <a href="/website-base/se-book-adapted/chapters-printable/testing-printable.html"><span class="glyphicon glyphicon-print" aria-hidden="true"></span></a></li>
+      </ul>
+      <popover id="pop:testing-preview" title="Testing <span class='glyphicon glyphicon-eye-open' aria-hidden='true'></span>" placement="right">
+        <div slot="content">
+          <div>
+            <p>All about testing</p>
+          </div>
         </div>
-      </div>
-    </popover>
-  </div>
-  <div>
-    <ul>
-      <li><a href="/website-base/book/testing/">Testing</a>
-        <trigger for="pop:testing-preview">🔍</trigger><a href="testing/print.html">📜</a></li>
-    </ul>
-    <popover id="pop:testing-preview" title="Testing :mag:" placement="right">
-      <div slot="content">
-        <div>
-          <p>All about testing</p>
+      </popover>
+      <ul>
+        <li><a href="/website-base/se-book-adapted/chapters/testCaseDesign.html">Test Case Design</a>
+          <trigger for="pop:testCaseDesign-preview"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></trigger> <a href="/website-base/se-book-adapted/chapters-printable/testCaseDesign-printable.html"><span class="glyphicon glyphicon-print" aria-hidden="true"></span></a></li>
+      </ul>
+      <popover id="pop:testCaseDesign-preview" title="Test Case Design <span class='glyphicon glyphicon-eye-open' aria-hidden='true'></span>" placement="right">
+        <div slot="content">
+          <div>
+            <p>All about test case design</p>
+          </div>
         </div>
-      </div>
-    </popover>
-  </div>
-  <div>
-    <ul>
-      <li><a href="/website-base/book/testCaseDesign/">Test Case Design</a>
-        <trigger for="pop:testCaseDesign-preview">🔍</trigger><a href="testCaseDesign/print.html">📜</a></li>
-    </ul>
-    <popover id="pop:testCaseDesign-preview" title="Test Case Design :mag:" placement="right">
-      <div slot="content">
-        <div>
-          <p>All about test case design</p>
+      </popover>
+      <p><br><big></big></p>
+      <p><strong>Project Management</strong></p>
+      <ul>
+        <li><a href="/website-base/se-book-adapted/chapters/revisionControl.html">Revision Control</a>
+          <trigger for="pop:revisionControl-preview"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></trigger> <a href="/website-base/se-book-adapted/chapters-printable/revisionControl-printable.html"><span class="glyphicon glyphicon-print" aria-hidden="true"></span></a></li>
+      </ul>
+      <popover id="pop:revisionControl-preview" title="Revision Control <span class='glyphicon glyphicon-eye-open' aria-hidden='true'></span>" placement="right">
+        <div slot="content">
+          <div>
+            <p>All about revision control</p>
+          </div>
         </div>
-      </div>
-    </popover>
-  </div>
-  <h3 id="project-management">Project Management</h3>
-  <div>
-    <ul>
-      <li><a href="/website-base/book/revisionControl/">Revision Control</a>
-        <trigger for="pop:revisionControl-preview">🔍</trigger><a href="revisionControl/print.html">📜</a></li>
-    </ul>
-    <popover id="pop:revisionControl-preview" title="Revision Control :mag:" placement="right">
-      <div slot="content">
-        <div>
-          <p>All about revision control</p>
+      </popover>
+      <ul>
+        <li><a href="/website-base/se-book-adapted/chapters/projectPlanning.html">Project Planning</a>
+          <trigger for="pop:projectPlanning-preview"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></trigger> <a href="/website-base/se-book-adapted/chapters-printable/projectPlanning-printable.html"><span class="glyphicon glyphicon-print" aria-hidden="true"></span></a></li>
+      </ul>
+      <popover id="pop:projectPlanning-preview" title="Project Planning <span class='glyphicon glyphicon-eye-open' aria-hidden='true'></span>" placement="right">
+        <div slot="content">
+          <div>
+            <p>All about project planning</p>
+          </div>
         </div>
-      </div>
-    </popover>
-  </div>
-  <div>
-    <ul>
-      <li><a href="/website-base/book/projectPlanning/">Project Planning</a>
-        <trigger for="pop:projectPlanning-preview">🔍</trigger><a href="projectPlanning/print.html">📜</a></li>
-    </ul>
-    <popover id="pop:projectPlanning-preview" title="Project Planning :mag:" placement="right">
-      <div slot="content">
-        <div>
-          <p>All about project planning</p>
+      </popover>
+      <ul>
+        <li><a href="/website-base/se-book-adapted/chapters/teamwork.html">Teamwork</a>
+          <trigger for="pop:teamwork-preview"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></trigger> <a href="/website-base/se-book-adapted/chapters-printable/teamwork-printable.html"><span class="glyphicon glyphicon-print" aria-hidden="true"></span></a></li>
+      </ul>
+      <popover id="pop:teamwork-preview" title="Teamwork <span class='glyphicon glyphicon-eye-open' aria-hidden='true'></span>" placement="right">
+        <div slot="content">
+          <div>
+            <p>All about teamwork</p>
+          </div>
         </div>
-      </div>
-    </popover>
-  </div>
-  <div>
-    <ul>
-      <li><a href="/website-base/book/teamwork/">Teamwork</a>
-        <trigger for="pop:teamwork-preview">🔍</trigger><a href="teamwork/print.html">📜</a></li>
-    </ul>
-    <popover id="pop:teamwork-preview" title="Teamwork :mag:" placement="right">
-      <div slot="content">
-        <div>
-          <p>All about teamwork</p>
+      </popover>
+      <ul>
+        <li><a href="/website-base/se-book-adapted/chapters/processModels.html">SDLC Process Models</a>
+          <trigger for="pop:processModels-preview"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></trigger> <a href="/website-base/se-book-adapted/chapters-printable/processModels-printable.html"><span class="glyphicon glyphicon-print" aria-hidden="true"></span></a></li>
+      </ul>
+      <popover id="pop:processModels-preview" title="SDLC Process Models <span class='glyphicon glyphicon-eye-open' aria-hidden='true'></span>" placement="right">
+        <div slot="content">
+          <div>
+            <p>All about SDLC process models</p>
+          </div>
         </div>
-      </div>
-    </popover>
-  </div>
-  <div>
-    <ul>
-      <li><a href="/website-base/book/processModels/">SDLC Process Models</a>
-        <trigger for="pop:processModels-preview">🔍</trigger><a href="processModels/print.html">📜</a></li>
-    </ul>
-    <popover id="pop:processModels-preview" title="SDLC Process Models :mag:" placement="right">
-      <div slot="content">
-        <div>
-          <p>All about SDLC process models</p>
+      </popover>
+      <p><br><big></big></p>
+      <p><strong>Tools</strong></p>
+      <ul>
+        <li><a href="/website-base/se-book-adapted/chapters/uml.html">UML</a>
+          <trigger for="pop:uml-preview"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></trigger> <a href="/website-base/se-book-adapted/chapters-printable/uml-printable.html"><span class="glyphicon glyphicon-print" aria-hidden="true"></span></a></li>
+      </ul>
+      <popover id="pop:uml-preview" title="UML <span class='glyphicon glyphicon-eye-open' aria-hidden='true'></span>" placement="right">
+        <div slot="content">
+          <div>
+            <p>All about UML</p>
+          </div>
         </div>
-      </div>
-    </popover>
-  </div>
-  <h3 id="tools">Tools</h3>
-  <div>
-    <ul>
-      <li><a href="/website-base/book/uml/">UML</a>
-        <trigger for="pop:uml-preview">🔍</trigger><a href="uml/print.html">📜</a></li>
-    </ul>
-    <popover id="pop:uml-preview" title="UML :mag:" placement="right">
-      <div slot="content">
-        <div>
-          <p>All about UML</p>
+      </popover>
+      <ul>
+        <li><a href="/website-base/se-book-adapted/chapters/intellij.html">Intellij IDEA</a>
+          <trigger for="pop:intellij-preview"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></trigger> <a href="/website-base/se-book-adapted/chapters-printable/intellij-printable.html"><span class="glyphicon glyphicon-print" aria-hidden="true"></span></a></li>
+      </ul>
+      <popover id="pop:intellij-preview" title="Intellij IDEA <span class='glyphicon glyphicon-eye-open' aria-hidden='true'></span>" placement="right">
+        <div slot="content">
+          <div>
+            <p>All about Intellij IDEA</p>
+          </div>
         </div>
-      </div>
-    </popover>
-  </div>
-  <div>
-    <ul>
-      <li><a href="/website-base/book/intellij/">Intellij IDEA</a>
-        <trigger for="pop:intellij-preview">🔍</trigger><a href="intellij/print.html">📜</a></li>
-    </ul>
-    <popover id="pop:intellij-preview" title="Intellij IDEA :mag:" placement="right">
-      <div slot="content">
-        <div>
-          <p>All about Intellij IDEA</p>
+      </popover>
+      <ul>
+        <li><a href="/website-base/se-book-adapted/chapters/gitAndGithub.html">Git and Github</a>
+          <trigger for="pop:gitAndGithub-preview"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></trigger> <a href="/website-base/se-book-adapted/chapters-printable/gitAndGithub-printable.html"><span class="glyphicon glyphicon-print" aria-hidden="true"></span></a></li>
+      </ul>
+      <popover id="pop:gitAndGithub-preview" title="Git and Github <span class='glyphicon glyphicon-eye-open' aria-hidden='true'></span>" placement="right">
+        <div slot="content">
+          <div>
+            <p>All about Git and Github</p>
+          </div>
         </div>
-      </div>
-    </popover>
-  </div>
-  <div>
-    <ul>
-      <li><a href="/website-base/book/gitAndGithub/">Git and Github</a>
-        <trigger for="pop:gitAndGithub-preview">🔍</trigger><a href="gitAndGithub/print.html">📜</a></li>
-    </ul>
-    <popover id="pop:gitAndGithub-preview" title="Git and Github :mag:" placement="right">
-      <div slot="content">
-        <div>
-          <p>All about Git and Github</p>
+      </popover>
+      <ul>
+        <li><a href="/website-base/se-book-adapted/chapters/javaTools.html">Java</a>
+          <trigger for="pop:javaTools-preview"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></trigger> <a href="/website-base/se-book-adapted/chapters-printable/javaTools-printable.html"><span class="glyphicon glyphicon-print" aria-hidden="true"></span></a></li>
+      </ul>
+      <popover id="pop:javaTools-preview" title="Java <span class='glyphicon glyphicon-eye-open' aria-hidden='true'></span>" placement="right">
+        <div slot="content">
+          <div>
+            <p>All about Java</p>
+          </div>
         </div>
-      </div>
-    </popover>
-  </div>
-  <div>
-    <ul>
-      <li><a href="/website-base/book/javaTools/">Java</a>
-        <trigger for="pop:javaTools-preview">🔍</trigger><a href="javaTools/print.html">📜</a></li>
-    </ul>
-    <popover id="pop:javaTools-preview" title="Java :mag:" placement="right">
-      <div slot="content">
-        <div>
-          <p>All about Java</p>
+      </popover>
+      <ul>
+        <li><a href="/website-base/se-book-adapted/chapters/junit.html">JUnit</a>
+          <trigger for="pop:junit-preview"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></trigger> <a href="/website-base/se-book-adapted/chapters-printable/junit-printable.html"><span class="glyphicon glyphicon-print" aria-hidden="true"></span></a></li>
+      </ul>
+      <popover id="pop:junit-preview" title="JUnit <span class='glyphicon glyphicon-eye-open' aria-hidden='true'></span>" placement="right">
+        <div slot="content">
+          <div>
+            <p>All about JUnit</p>
+          </div>
         </div>
-      </div>
-    </popover>
-  </div>
-  <div>
-    <ul>
-      <li><a href="/website-base/book/junit/">JUnit</a>
-        <trigger for="pop:junit-preview">🔍</trigger><a href="junit/print.html">📜</a></li>
-    </ul>
-    <popover id="pop:junit-preview" title="JUnit :mag:" placement="right">
-      <div slot="content">
-        <div>
-          <p>All about JUnit</p>
+      </popover>
+      <p><br><big></big></p>
+      <p><strong>Principles</strong></p>
+      <ul>
+        <li><a href="/website-base/se-book-adapted/chapters/principles.html">Principles</a>
+          <trigger for="pop:principles-preview"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></trigger> <a href="/website-base/se-book-adapted/chapters-printable/principles-printable.html"><span class="glyphicon glyphicon-print" aria-hidden="true"></span></a></li>
+      </ul>
+      <popover id="pop:principles-preview" title="Principles <span class='glyphicon glyphicon-eye-open' aria-hidden='true'></span>" placement="right">
+        <div slot="content">
+          <div>
+            <p>All about principles</p>
+          </div>
         </div>
-      </div>
-    </popover>
+      </popover>
+      <p><br><big></big></p>
+      <p><strong>Supplementary</strong></p>
+      <ul>
+        <li><a href="common/exercises.html">Combined Exercises</a></li>
+        <li><a href="common/definitions.html">List of Definitions</a></li>
+      </ul>
+    </div>
   </div>
-  <h3 id="supplementary">Supplementary</h3>
-  <div>
-    <ul>
-      <li><a href="/website-base/book/principles/">Principles</a>
-        <trigger for="pop:principles-preview">🔍</trigger><a href="principles/print.html">📜</a></li>
-    </ul>
-    <popover id="pop:principles-preview" title="Principles :mag:" placement="right">
-      <div slot="content">
-        <div>
-          <p>All about principles</p>
-        </div>
-      </div>
-    </popover>
-  </div>
-
-  <ul>
-    <li><a href="common/definitions.html">List of Definitions</a></li>
-    <li><a href="common/references.html">List of References</a></li>
-    <li><a href="common/outcomes.html">List of Learning Outcomes</a></li>
-    <li><a href="common/print.html">Printable Version 📜</a></li>
-  </ul>
 </div>
+<div id="flex-div"></div>
+<footer>
+  <div class="text-center">
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.9.0</a> at Mon, 16 Jul 2018 03:09:09 GMT</small></div>
+</footer>
 </div>
 </body>
 <script src="..\markbind\js\vue.min.js"></script>
 <script src="..\markbind\js\vue-strap.min.js"></script>
+<script src="..\markbind\js\polyfill.min.js"></script>
+<script src="..\markbind\js\bootstrap-vue.min.js"></script>
 <script>
     const baseUrl = '/website-base'
 </script>
 <script src="..\markbind\js\setup.js"></script>
-<script src="..\markbind\js\site-nav.js"></script>
 </html>

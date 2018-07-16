@@ -1,5 +1,6 @@
 {
   "baseUrl": "/website-base",
+  "titlePrefix": "CS2103/T Website",
   "ignore": [
     "_site/*",
     ".idea/*",
@@ -12,40 +13,25 @@
     ".git/*"
   ],
   "pages": [
-    {
-      "glob": "**/index.md"
-    },
-    {
-      "glob": "**/projectList.md"
-    },
-    {
-      "glob": "**/tutorialSchedule.md"
-    },
-    {
-      "glob": "**/index.html"
-    },
-    {
-      "glob": "**/acknowledgements.md"
-    },
-    {
-      "glob": "**/usage.md"
-    },
-    {
-      "glob": "**/print.md",
+    {"glob": "index.md"},
+    {"glob": "admin/*.md"},
+    {"glob": "admin/gradeBreakdown.md"},
+    {"glob": "schedule/**/outcomes.md",
+      "searchable": "no"},
+    {"glob": "book/about/*.md"},
+    {"glob": "se-book-adapted/index.md"},
+    {"glob": "se-book-adapted/chapters/*.md"},
+    {"glob": "se-book-adapted/chapters-printable/*.md",
       "searchable": "no"
     },
-    {
-      "glob": "**/all.md"
+    {"glob": "se-book-adapted/common/*.md"},
+    {"glob": "book/combined/exercises.md"},
+    {"src": "se-book-adapted/print.md",
+      "searchable": "no"
     },
-    {
-      "glob": "**/definitions.md"
-    },
-    {
-      "glob": "**/outcomes.md"
-    },
-    {
-      "glob": "**/references.md"
+    {"src": "admin/index-flat.md",
+      "searchable": "no"
     }
   ],
-  "titlePrefix": "CS2103/T Website"
+  "headingIndexingLevel": 4
 }

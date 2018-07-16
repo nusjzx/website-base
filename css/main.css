@@ -1,8 +1,8 @@
 .website-content {
     margin: 12px auto 40px auto;
-    max-width: 1000px;
+    max-width: 70%;
     overflow: hidden;
-    width:90%;
+    text-align:justify
 }
 
 .website-content > div {
@@ -10,7 +10,10 @@
 }
 
 mark {
-    background-color: yellow;
+    background-color: rgba(255, 255, 0, 0.38);
+    border-radius: 5px;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 .important {
